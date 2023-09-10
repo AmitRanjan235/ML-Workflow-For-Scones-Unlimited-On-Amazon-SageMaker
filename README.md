@@ -178,3 +178,8 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
 - Loaded the data from Model Monitor into the notebook.
 - visualize Model Monitor data.
 - Created custom visualizations of the Model Monitor data outputs.
+
+
+      <p align="center">
+  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/3b646c8f8e61db500aba863c8ed16252729ef856/visualization.png" alt="ML WORKFLOW" width="800">
+</p>
