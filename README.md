@@ -181,6 +181,6 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
 
  
   <p align="center">
-  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/3b646c8f8e61db500aba863c8ed16252729ef856/visualization.png" alt="ML WORKFLOW" width="800">
+  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/3b646c8f8e61db500aba863c8ed16252729ef856/visualization.png" alt="ML WORKFLOW" width="600">
 </p>
 
