@@ -128,7 +128,7 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
     - Provide a screenshot of the working Step Function.
   
       <p align="center">
-  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png" alt="ML WORKFLOW" width="800">
+  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png" alt="ML WORKFLOW" width="600">
 </p>
 
  
@@ -171,7 +171,7 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
 
 ### Monitor the Model for Errors
 
-- Can extract Monitoring data from S3.
+- extracted Monitoring data from S3.
 - Loaded the data from Model Monitor into the notebook.
-- Can visualize Model Monitor data.
+- visualize Model Monitor data.
 - Created custom visualizations of the Model Monitor data outputs.
