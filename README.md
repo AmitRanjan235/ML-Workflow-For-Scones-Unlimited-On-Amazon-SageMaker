@@ -1,6 +1,7 @@
 # Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker
 
 ## Project Overview
+![ML WORKFLOW]([stepfunctions_graph.png](https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png))
 
 ### Project Introduction
 Image Classifiers are used in the field of computer vision to identify the content of an image and are applied across various industries. As a Machine Learning Engineer at Scones Unlimited, you will be working on an Image Classification model to enhance their scone delivery logistics.
@@ -126,7 +127,7 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
     - Export a JSON definition of the Step Function.
     - Provide a screenshot of the working Step Function.
 
-![ML WORKFLOW]([stepfunctions_graph.png](https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png))
+
 
 4. **Testing and Evaluation**
 
