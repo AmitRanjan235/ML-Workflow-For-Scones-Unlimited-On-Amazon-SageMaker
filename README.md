@@ -45,24 +45,27 @@ def extract_cifar_data(url, filename="cifar.tar.gz"):
     with open(filename, "wb") as file_context:
         file_context.write(r.content)
     return
+```
 You can test this function by running the following cell and checking whether a new file named "cifar.tar.gz" is created in the file explorer:
 
-python
-Copy code
+```python
+
 extract_cifar_data("https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz")
-2. Transform the data into a usable shape and format
+```
+####2. Transform the data into a usable shape and format
 After extracting the data, we need to transform it into a format suitable for our machine learning workflow. In this section, we'll decompress the extracted dataset using the tarfile library:
 
-python
-Copy code
+```python
+
 import tarfile
 
 with tarfile.open("cifar.tar.gz", "r:gz") as tar:
     tar.extractall()
+```
 This will create a new folder named "cifar-100-python," which contains "meta," "test," and "train" files. These files are pickled and can be loaded using Python's pickle library:
 
-python
-Copy code
+```python
+
 import pickle
 
 with open("./cifar-100-python/meta", "rb") as f:
@@ -73,4 +76,5 @@ with open("./cifar-100-python/test", "rb") as f:
 
 with open("./cifar-100-python/train", "rb") as f:
     dataset_train = pickle.load(f, encoding='bytes')
+```
 The dataset_train and dataset_test objects contain information about the dataset, including filenames, labels, and the image data.
