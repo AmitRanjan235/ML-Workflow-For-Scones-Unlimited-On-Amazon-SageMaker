@@ -18,17 +18,30 @@ Image classifiers are integral to computer vision and have applications in auton
 
 ## Deploy and Monitor a Machine Learning Workflow for Image Classification
 
-### Setting up this notebook
-Notes about the instance size and kernel setup: This notebook has been tested on the Python 3 (Data Science) kernel and the ml.t3.medium SageMaker notebook instance.
-
 ### Data Staging
+We will use a sample dataset called CIFAR to simulate the challenges Scones Unlimited faces in image classification. To get started with CIFAR, we need to:
+
+1. Extract the data from a hosting service.
+2. Transform it into a usable shape and format.
+3. Load it into a production system.
 
 #### 1. Extract the data from the hosting service
-We'll use a sample dataset called CIFAR to simulate the challenges faced by Scones Unlimited in image classification. To start working with CIFAR, we'll need to extract the data from the hosting service.
+In this section, we define a function `extract_cifar_data` that extracts the Python version of the CIFAR-100 dataset. The CIFAR dataset is open source and generously hosted by the University of Toronto at [https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz](https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz).
 
-#### 2. Transform the data into a usable shape and format
-After extracting the data, we'll transform it into a format suitable for our machine learning workflow. This involves decompressing the extracted dataset and preparing it for training and deployment.
+**Function definition:**
+```python
+import requests
 
-Detailed instructions and code snippets are provided for each step in the project.
+def extract_cifar_data(url, filename="cifar.tar.gz"):
+    # A function for extracting the CIFAR-100 dataset and storing it as a gzipped file
 
-With this, you have completed the data staging process, preparing the CIFAR dataset for image classification. This dataset is now ready for training and deployment in Amazon SageMaker.
+    # Arguments:
+    # url      -- the URL where the dataset is hosted
+    # filename -- the full path where the dataset will be written
+
+    # Todo: request the data from the data URL
+    # Hint: use `requests.get` method
+    r = requests.get(url)
+    with open(filename, "wb") as file_context:
+        file_context.write(r.content)
+    return
