@@ -2,6 +2,39 @@
 <html>
 <head>
     <title>Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        h3 {
+            color: #777;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.4;
+        }
+
+        ol {
+            color: #333;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker</h1>
@@ -45,9 +78,7 @@
         Data staging involves extracting, transforming, and loading the data for use in the project.
     </p>
 
-    <p>
-        Detailed instructions about data extraction and transformation are omitted for brevity.
-    </p>
+    <!-- Detailed instructions about data extraction and transformation are omitted -->
 
     <p>
         With this, you have completed the data staging process, preparing the CIFAR dataset for image classification. This dataset is now ready for training and deployment in Amazon SageMaker.
