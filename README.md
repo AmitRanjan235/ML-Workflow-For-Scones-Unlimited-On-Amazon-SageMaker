@@ -184,3 +184,25 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
   <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/3b646c8f8e61db500aba863c8ed16252729ef856/visualization.png" alt="ML WORKFLOW" width="600">
 </p>
 
+
+## Resources
+
+### Documentation and Guides
+- [Amazon SageMaker Documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/what-is-sagemaker.html) - Official documentation for Amazon SageMaker.
+- [SageMaker Python SDK Documentation](https://sagemaker.readthedocs.io/en/stable/) - Documentation for the SageMaker Python SDK.
+
+### Tutorials and Examples
+- [Amazon SageMaker Examples](https://github.com/awslabs/amazon-sagemaker-examples) - A repository of SageMaker example notebooks and tutorials.
+- [Machine Learning on AWS](https://aws.amazon.com/getting-started/hands-on/build-train-deploy-machine-learning-model-sagemaker/) - A hands-on tutorial for building and deploying a machine learning model with SageMaker.
+
+### Community and Support
+- [Amazon SageMaker Forum](https://forums.aws.amazon.com/forumdisplay.jspa?forumID=287) - Community forum for SageMaker discussions and questions.
+- [AWS Support](https://aws.amazon.com/premiumsupport/) - Official AWS support resources.
+
+### Related Articles
+- [Introduction to Image Classification with SageMaker](https://aws.amazon.com/blogs/machine-learning/introduction-to-image-classification-with-sagemaker/) - A blog post introducing image classification with SageMaker.
+
+
+
+
+
