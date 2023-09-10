@@ -1,6 +1,8 @@
 # Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker
 
 ## Project Overview
+![ML WORKFLOW](stepfunctions_graph.png)
+
 
 ### Project Introduction
 Image Classifiers are used in the field of computer vision to identify the content of an image and are applied across various industries. As a Machine Learning Engineer at Scones Unlimited, you will be working on an Image Classification model to enhance their scone delivery logistics.
