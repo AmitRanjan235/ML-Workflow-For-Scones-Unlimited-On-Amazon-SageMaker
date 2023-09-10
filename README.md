@@ -125,7 +125,7 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
     - Compose the Lambdas together in a Step Function.
     - Export a JSON definition of the Step Function.
     - Provide a screenshot of the working Step Function.
-      ![ML WORKFLOW]([stepfunctions_graph.png](https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png))
+![ML WORKFLOW]([stepfunctions_graph.png](https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png))
 
 4. **Testing and Evaluation**
 
