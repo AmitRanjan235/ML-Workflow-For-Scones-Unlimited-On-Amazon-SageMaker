@@ -1,7 +1,7 @@
 # Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker
 
 ## Project Overview
-![ML WORKFLOW](stepfunctions_graph.png)
+![ML WORKFLOW]([stepfunctions_graph.png](https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png))
 
 
 ### Project Introduction
