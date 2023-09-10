@@ -52,7 +52,7 @@ You can test this function by running the following cell and checking whether a 
 
 extract_cifar_data("https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz")
 ```
-####2. Transform the data into a usable shape and format
+#### 2. Transform the data into a usable shape and format
 After extracting the data, we need to transform it into a format suitable for our machine learning workflow. In this section, we'll decompress the extracted dataset using the tarfile library:
 
 ```python
