@@ -78,3 +78,91 @@ with open("./cifar-100-python/train", "rb") as f:
     dataset_train = pickle.load(f, encoding='bytes')
 ```
 The dataset_train and dataset_test objects contain information about the dataset, including filenames, labels, and the image data.
+
+#### 3. Load the data
+Now we can load the data into S3. Using the SageMaker SDK, grab the current region, execution role, and bucket:
+
+```python
+
+import sagemaker
+
+sess = sagemaker.Session()
+
+bucket = sess.default_bucket()
+print("Default Bucket: {}".format(bucket))
+
+region = sess.boto_region_name
+print("AWS Region: {}".format(region))
+
+role = sagemaker.get_execution_role()
+print("RoleArn: {}".format(role))
+```
+With this data, we can easily sync your data up into S3:
+
+```python
+
+import os
+
+os.environ["DEFAULT_S3_BUCKET"] = bucket
+!aws s3 sync ./train s3://${DEFAULT_S3_BUCKET}/train/
+!aws s3 sync ./test s3://${DEFAULT_S3_BUCKET}/test/
+```
+
+
+2. **Model Training and Deployment**
+
+    - Generate metadata files for training.
+    - Upload metadata files and image data to Amazon S3.
+    - Create a SageMaker Estimator, set hyperparameters, and train the model.
+    - Deploy the trained model as an endpoint.
+
+3. **Lambdas and Step Function Workflow**
+
+    - Author three Lambda functions for the workflow.
+        1. The first Lambda returns an object to the Step Function as image_data in an event.
+        2. The second Lambda is responsible for image classification.
+        3. The third Lambda is responsible for filtering low-confidence inferences.
+    - Compose the Lambdas together in a Step Function.
+    - Export a JSON definition of the Step Function.
+    - Provide a screenshot of the working Step Function.
+
+4. **Testing and Evaluation**
+
+    - Make predictions using a sample image.
+    - Monitor the model for errors.
+
+5. **Optional Challenge**
+
+    - Explore additional challenges related to the project.
+
+6. **Cleanup Cloud Resources**
+
+    - Guidelines for cleaning up resources when done with the project.
+
+## Success Criteria
+
+### Model Training and Deployment
+
+- Successfully completed the Model training section up to "Getting ready to deploy," demonstrating that the model was trained.
+- Can construct an API endpoint associated with a model trained in SageMaker.
+- Successfully completed the "Getting ready to deploy" section, showing that the trained ML model was deployed.
+- Have a unique model endpoint name printed in the notebook for use later in the project.
+- Successfully made predictions using a sample image.
+
+### Build a Full Machine Learning Workflow
+
+- Authored three Lambda functions.
+    1. The first Lambda returns an object to the Step Function as image_data in an event.
+    2. The second Lambda is responsible for image classification.
+    3. The third Lambda is responsible for filtering low-confidence inferences.
+- Saved the code for each Lambda function in a Python script.
+- Can author a Step Function by composing Lambdas together.
+- Have a JSON export that defines the Step Function.
+- Provided a screenshot of the working Step Function.
+
+### Monitor the Model for Errors
+
+- Can extract Monitoring data from S3.
+- Loaded the data from Model Monitor into the notebook.
+- Can visualize Model Monitor data.
+- Created custom visualizations of the Model Monitor data outputs.
