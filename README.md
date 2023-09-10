@@ -45,11 +45,12 @@
         Data staging involves extracting, transforming, and loading the data for use in the project.
     </p>
 
-    <!-- Detailed instructions about data extraction and transformation are omitted -->
+    <p>
+        Detailed instructions about data extraction and transformation are omitted for brevity.
+    </p>
 
     <p>
         With this, you have completed the data staging process, preparing the CIFAR dataset for image classification. This dataset is now ready for training and deployment in Amazon SageMaker.
     </p>
-
 </body>
 </html>
