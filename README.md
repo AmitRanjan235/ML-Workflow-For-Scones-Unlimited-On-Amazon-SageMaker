@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Deploy and Monitor a Machine Learning Workflow for Image Classification</title>
+    <title>Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker</title>
 </head>
 <body>
-    <h1>Deploy and Monitor a Machine Learning Workflow for Image Classification</h1>
+    <h1>Project: Build a ML Workflow For Scones Unlimited On Amazon SageMaker</h1>
 
-    <h2>Setting up this notebook</h2>
-    <p>Notes about the instance size and kernel setup:</p>
-    <p>This notebook has been tested on:</p>
-    <ul>
-        <li>The Python 3 (Data Science) kernel</li>
-        <li>The ml.t3.medium SageMaker notebook instance</li>
-    </ul>
-
-    <h2>Data Staging</h2>
-
-    <h3>1. Extract the data from the hosting service</h3>
+    <h2>Project Overview</h2>
+    <h3>Project Introduction</h3>
     <p>
-        In the following cell, we define a function <code>extract_cifar_data</code> that extracts the Python version of the CIFAR-100 dataset.
-        The CIFAR dataset is open source and generously hosted by the University of Toronto at
-        <a href="https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz">https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz</a>.
+        Image Classifiers are used in the field of computer vision to identify the content of an image and are applied across various industries.
+        As a Machine Learning Engineer at Scones Unlimited, you will be working on an Image Classification model to enhance their scone delivery logistics.
     </p>
-    <!-- Code snippet omitted -->
 
-    <h3>2. Transform the data into a usable shape and format</h3>
+    <h3>Background</h3>
     <p>
-        After extracting the data, we need to transform it into a format suitable for our machine learning workflow.
-        In this section, we'll decompress the extracted dataset using the <code>tarfile</code> library.
+        Image classifiers are integral to computer vision and have applications in autonomous vehicles, augmented reality, eCommerce, and more.
+        Your role at Scones Unlimited is to create an image classification model capable of identifying the type of vehicle delivery drivers use, optimizing routing and order assignments.
     </p>
-    <!-- Code snippet omitted -->
+
+    <h2>Project Steps Overview</h2>
+    <ol>
+        <li>Data Staging</li>
+        <li>Model Training and Deployment</li>
+        <li>Lambdas and Step Function Workflow</li>
+        <li>Testing and Evaluation</li>
+        <li>Optional Challenge</li>
+        <li>Cleanup Cloud Resources</li>
+    </ol>
+
+    <h2>Deploy and Monitor a Machine Learning Workflow for Image Classification</h2>
+    <p>
+        This section focuses on deploying and monitoring a machine learning workflow for image classification. The key steps include setting up the notebook, data staging, and transforming the data into a usable format.
+    </p>
+
+    <h3>Setting up this notebook</h3>
+    <p>
+        Notes about the instance size and kernel setup: This notebook has been tested on the Python 3 (Data Science) kernel and the ml.t3.medium SageMaker notebook instance.
+    </p>
+
+    <h3>Data Staging</h3>
+    <p>
+        We'll use a sample dataset called CIFAR to simulate the challenges faced by Scones Unlimited in image classification.
+        Data staging involves extracting, transforming, and loading the data for use in the project.
+    </p>
+
+    <!-- Detailed instructions about data extraction and transformation are omitted -->
 
     <p>
-        Now that you have completed the data staging process, extracting, transforming, and loading the CIFAR dataset for image classification.
-        This prepared dataset can now be used for training and deploying your image classification model in Amazon SageMaker.
+        With this, you have completed the data staging process, preparing the CIFAR dataset for image classification. This dataset is now ready for training and deployment in Amazon SageMaker.
     </p>
+
 </body>
 </html>
