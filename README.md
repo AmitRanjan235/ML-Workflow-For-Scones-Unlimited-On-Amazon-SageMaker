@@ -157,6 +157,9 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
 - Successfully completed the "Getting ready to deploy" section, showing that the trained ML model was deployed.
 - Have a unique model endpoint name printed in the notebook for use later in the project.
 - Successfully made predictions using a sample image.
+  <p align="center">
+  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/b6192b399f939508c18c5fa2cd1e0ead23dce5aa/prediction.png" alt="sample prediction" width="600">
+</p>
 
 ### Build a Full Machine Learning Workflow
 
