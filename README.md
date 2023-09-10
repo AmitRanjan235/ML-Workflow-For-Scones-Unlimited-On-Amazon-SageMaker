@@ -45,3 +45,7 @@ def extract_cifar_data(url, filename="cifar.tar.gz"):
     with open(filename, "wb") as file_context:
         file_context.write(r.content)
     return
+```
+```
+extract_cifar_data("https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz")```
+
