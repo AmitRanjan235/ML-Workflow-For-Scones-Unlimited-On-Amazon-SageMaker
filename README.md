@@ -128,7 +128,7 @@ os.environ["DEFAULT_S3_BUCKET"] = bucket
     - Provide a screenshot of the working Step Function.
   
       <p align="center">
-  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png" alt="ML WORKFLOW" width="400">
+  <img src="https://github.com/AmitRanjan235/ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/2aa055f4404002515195cbe65ec3303f3faefc3f/stepfunctions_graph.png" alt="ML WORKFLOW" width="800">
 </p>
 
  
